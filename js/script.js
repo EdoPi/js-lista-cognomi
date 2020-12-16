@@ -1,5 +1,5 @@
-var output = document.getElementById('lista-cognomi');
-
+var outputList = document.getElementById('lista-cognomi');
+var outputPosition = document.getElementById('my-position');
 var lastNameList = ['Dean', 'Cruise', 'Theron', 'Johanson', 'Connery'];
 console.log('i congnomi iscritti sono: ' + lastNameList);
 
@@ -15,8 +15,10 @@ console.log('adesso la lista è ordinata e si presenta così: ' + lastNameList);
 
 
 for (var i = 0; i < lastNameList.length; i++) {
-  output.innerHTML += '<li>' + lastNameList[i] + '</li>';
+  outputList.innerHTML += '<li>' + lastNameList[i] + '</li>';
 }
 
-output.append('La tua posizione umana è: ' + (lastNameList.indexOf(userLastName) + 1));
+
+
+outputPosition.innerText = 'La tua posizione umana è : ' + (lastNameList.indexOf(userLastName)+1);
 console.log('il mio id è: ' + (lastNameList.indexOf(userLastName)+1));
