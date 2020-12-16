@@ -15,5 +15,8 @@ console.log('adesso la lista è ordinata e si presenta così: ' + lastNameList);
 
 
 for (var i = 0; i < lastNameList.length; i++) {
-  output.innerHTML += '<li>' + lastNameList[i] + '</li>'; 
+  output.innerHTML += '<li>' + lastNameList[i] + '</li>';
 }
+
+output.append('La tua posizione umana è: ' + (lastNameList.indexOf(userLastName) + 1));
+console.log('il mio id è: ' + (lastNameList.indexOf(userLastName)+1));
